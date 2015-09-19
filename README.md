@@ -1,0 +1,2 @@
+# SocketIO-Sessions
+Add session based authentication to a [socket.io](http://socket.io/) based Node.js application. This is a Node.js chat application made using [Koa](http://koajs.com/) web framework and socket.io for web-socket support. We use session based authentication to identify users in the chat. The working example of the application can be seen at [http://socketio.sessions.botleg.com](http://socketio.sessions.botleg.com).
