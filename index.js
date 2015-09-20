@@ -10,10 +10,8 @@ var server = require('http').Server(app.callback()),
 	io = require('socket.io')(server);
 
 io.on('connection', function(socket) {
-	socket.emit('server event', { hello: 'world' });
-
-	socket.on('client event', function (data) {
-		console.log(data);
+	socket.on('send chat', function (data) {
+		io.emit('new chat', data);
 	});
 });
 
